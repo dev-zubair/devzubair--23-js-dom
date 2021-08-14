@@ -8,7 +8,7 @@
 </head>
 <body>
    <main>
-    <h1>Welcome to my Blog</h1>
+    <h1 id="head-bg">Welcome to my Blog</h1>
 
     <section>
         <artile class="blog">
@@ -23,13 +23,46 @@
             <h3>My Awesome Blog-3</h3>
             <p>Tempora architecto tenetur cupiditate laboriosam minus amet nemo aliquid inventore cumque, maiores et mollitia! Quidem rem atque fuga ab eveniet consequuntur voluptate provident dolore, vitae error ipsa aspernatur aperiam ad.</p>
         </artile>
+        <article>
+            <h3>This is article 4</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, facilis!</p>
+        </article>
     </section>
    </main>
 
 
    <script>
+       const studentName = {name: 'zubair', age: 37}; 
       const secondTitle = document.getElementById ('second-title');
       secondTitle.style.color = 'blue';
+
+      const blogTitle = document.getElementsByTagName('h3');
+        console.log(blogTitle);
+
+        // jodi for loop diye chalai 
+        for (const h3 of blogTitle){
+            console.log(h3.innerText);
+        }
+
+        const blogDetails = document.getElementsByTagName('p');
+        console.log(blogDetails);
+
+        //forloop
+        for (const p of blogDetails){
+            console.log(p.innerText);
+        }
+
+        //H1 bg color
+        const headingTitle = document.getElementById('head-bg');
+        headingTitle.style.textAlign = 'center';
+        headingTitle.style.backgroundColor = 'red';
+        headingTitle.style.color = 'white';
+        headingTitle.innerText = 'Wecome to my Cool Blog.';
+        headingTitle.style.margin = '50px';
+        headingTitle.style.padding = '10px';
+        // console.log(myHeadingColor);
+        
+        
    </script>
 </body>
 </html>
